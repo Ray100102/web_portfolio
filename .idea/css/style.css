@@ -11,7 +11,7 @@ header
     display: flex;
     justify-content: space-around;
     align-items:center;
-    transition: 2s;
+    transition: 1s;
     z-index:100000;
 }
 /*Sticky header properties*/
@@ -57,12 +57,14 @@ header ul li a
     font-weight: 500px;
     transition: 0.5s;
 }
+
+/* Banner background properties */
 .banner
 {
     position: relative;
     width: 100%;
     height: 100vh;
-    background: url(gasworks.jpeg);
+    background: url(img/background.jpeg);
     background-size: cover;
 }
 
@@ -71,4 +73,70 @@ header.sticky .logo,
 header.sticky ul li a
 {
     color: #000;
+}
+
+/* Intro properties */
+
+.Intro h1
+{
+    color:red;
+    font-size:70px;
+    text-align:center;
+}
+/* About me properties*/
+.About h2
+{
+    color:blue;
+    font-size:70px;
+    text-align:center;
+}
+
+/* About me text properties*/
+.About h3
+{
+    color:white;
+    font-size: 20px;
+    text-align:center;
+}
+
+/* Project title properties*/
+.Project h2
+{
+    color:green;
+    font-size:70px;
+    text-align:center;
+}
+
+/* Projects properties*/
+.Project h3
+{
+    color:white;
+    font-size:20px
+}
+
+/* footer format*/
+footer ul
+{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Footer list property*/
+footer ul li
+{
+    position: relative;
+    list-style: none;
+}
+
+/* Footer List text properties */
+footer ul li a
+{
+    margin: 0 15px;
+    text-decoration: none;
+    color: #fff;
+    letter-spacing: 2px;
+    font-weight: 500px;
+    transition: 0.5s;
 }

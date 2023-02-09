@@ -1,0 +1,74 @@
+body {
+    background: #000;
+}
+/*Main header properties*/
+header
+{
+    position : fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items:center;
+    transition: 2s;
+    z-index:100000;
+}
+/*Sticky header properties*/
+header.sticky
+{
+    padding: 5px;
+    background: #fff;
+}
+/*Main logo format*/
+header .logo
+{
+    position : relative;
+    font-weight: 700;
+    color: #fff;
+    text-decoration: none;
+    font-size: 2em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: 0.6s;
+}
+/* header format*/
+header ul
+{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* List property*/
+header ul li
+{
+    position: relative;
+    list-style: none;
+}
+/* List text properties */
+header ul li a
+{
+    position: relative;
+    margin: 0 15px;
+    text-decoration: none;
+    color: #fff;
+    letter-spacing: 2px;
+    font-weight: 500px;
+    transition: 0.5s;
+}
+.banner
+{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: url(gasworks.jpeg);
+    background-size: cover;
+}
+
+/* Sticky color change */
+header.sticky .logo,
+header.sticky ul li a
+{
+    color: #000;
+}

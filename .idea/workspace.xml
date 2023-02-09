@@ -5,8 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a29f092e-3d8e-4ad7-a32f-12658ab5cd0e" name="Changes" comment="First commit">
-      <change afterPath="$PROJECT_DIR$/.idea/img/dog.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/css/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/img/gasworks.jpeg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/main.html" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/main.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -39,7 +41,10 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "last_opened_file_path": "/Users/ray/IdeaProjects/web_portfolio/.idea/img"
+    "last_opened_file_path": "/Users/ray/IdeaProjects/web_portfolio/.idea/img",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.0"
   }
 }]]></component>
   <component name="RecentsManager">

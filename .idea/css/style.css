@@ -1,6 +1,11 @@
 body {
-    background: #000;
+    background: #e0dbd1;
 }
+html
+{
+    scroll-behavior : smooth;
+}
+
 /*Main header properties*/
 header
 {
@@ -14,23 +19,21 @@ header
     transition: 1s;
     z-index:100000;
 }
-/*Sticky header properties*/
-header.sticky
-{
-    padding: 5px;
-    background: #fff;
-}
 /*Main logo format*/
 header .logo
 {
     position : relative;
     font-weight: 700;
-    color: #fff;
+    color: black;
     text-decoration: none;
     font-size: 2em;
     text-transform: uppercase;
-    letter-spacing: 2px;
+    letter-spacing: 10px;
     transition: 0.6s;
+}
+header .nav
+{
+    nav:10px;
 }
 /* header format*/
 header ul
@@ -38,7 +41,10 @@ header ul
     position: relative;
     display: flex;
     justify-content: center;
-    align-items: center;
+    width: 100%;
+    align-items: stretch;
+    padding: 0;
+
 }
 /* List property*/
 header ul li
@@ -49,44 +55,76 @@ header ul li
 /* List text properties */
 header ul li a
 {
+
     position: relative;
-    margin: 0 15px;
+    margin: 0 20px;
     text-decoration: none;
-    color: #fff;
-    letter-spacing: 2px;
+    color: black;
+    letter-spacing: 3px;
     font-weight: 500px;
     transition: 0.5s;
 }
 
-/* Banner background properties */
 .banner
 {
+
+}
+/* Banner background properties */
+.background
+{
+    opacity : .7;
+
     position: relative;
-    width: 100%;
-    height: 100vh;
-    background: url(img/background.jpeg);
+    width: 100vw;
+    max-width: 100vw;
+    width:120%;
+    left: 50%;
+    margin-left: -50vw;
+
+    margin-top:-1vw;
+    height: 110vh;
+    background: url(img/SUZ.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
     background-size: cover;
+    border:none;
+
+}
+
+.section__title--intro
+{
+    text-align:center;
+    font-size:100px;
+    color: black;
+    opacity: 1;
+    text : center;
+
+
+    position: absolute;
+    top: 5%;
+    bottom: 50%;
+    left: 37%;
+}
+
+/*Sticky header properties*/
+header.sticky
+{
+    padding: 5px;
+    background: #808080;
 }
 
 /* Sticky color change */
 header.sticky .logo,
 header.sticky ul li a
 {
-    color: #000;
+    color: #F5F5F5;
 }
 
-/* Intro properties */
-
-.Intro h1
-{
-    color:red;
-    font-size:70px;
-    text-align:center;
-}
-/* About me properties*/
+/* About me title properties*/
 .About h2
 {
-    color:blue;
+    color:#E5C99F;
     font-size:70px;
     text-align:center;
 }
@@ -94,7 +132,26 @@ header.sticky ul li a
 /* About me text properties*/
 .About h3
 {
-    color:white;
+    margin-left: 300px;
+    margin-right: 300px;
+    color:black;
+    font-size: 20px;
+    text-align:center;
+    background-color:#FAFFC7;
+}
+
+/* Intern title properties*/
+.Intern h2
+{
+    color:#E5C99F;
+    font-size:70px;
+    text-align:center;
+}
+
+/* Intern text properties*/
+.Intern h3
+{
+    color:black;
     font-size: 20px;
     text-align:center;
 }
@@ -102,15 +159,15 @@ header.sticky ul li a
 /* Project title properties*/
 .Project h2
 {
-    color:green;
+    color:#E5C99F;
     font-size:70px;
     text-align:center;
 }
 
-/* Projects properties*/
+/* Projects text properties*/
 .Project h3
 {
-    color:white;
+    color:black;
     font-size:20px
 }
 
@@ -135,7 +192,7 @@ footer ul li a
 {
     margin: 0 15px;
     text-decoration: none;
-    color: #fff;
+    color: black;
     letter-spacing: 2px;
     font-weight: 500px;
     transition: 0.5s;

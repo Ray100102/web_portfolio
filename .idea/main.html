@@ -14,9 +14,6 @@
     <body>
         <!-- Sticky Navigation Header-->
         <header>
-            <!--a href = "#" class = "logo">
-                Ray Guo
-            </a-->
             <nav class = "nav">
                 <ul class = "nav__list">
                     <li class = "nav__item"><a href="#home" class = "nav__link"><Home>Home</Home></a></li>
@@ -27,8 +24,14 @@
                 </ul>
             </nav>
         </header>
+        <script type = "text/javascript">
+            window.addEventListener("scroll", function(){
+                var header = document.querySelector("header");
+                   header.classList.toggle("sticky", window.scrollY > 20);
+                   })
+        </script>
 
-        <!-- Intro -->
+        <!-- Title Page -->
         <section class = "banner"  id = "home">
             <img class = "background" id = "img1"></img>
             <img class = "profilepic" id = "pfp" image src = "img/pfp.jpeg"></img>
@@ -36,14 +39,12 @@
             <div class = "title">
                 Ray Guo
             </div>
+
+            <div class = "subtitle">
+                CS Student @ The University of Washington - Seattle
+            </div>
         </section>
 
-        <script type = "text/javascript">
-            window.addEventListener("scroll", function(){
-                var header = document.querySelector("header");
-                   header.classList.toggle("sticky", window.scrollY > 0);
-                   })
-        </script>
         <!-- About Me -->
         <section class = "About" id = "about">
             <br>
@@ -56,19 +57,6 @@
                             I'm a very multi-passionte person and am always trying something new!
                             Please feel free to connect with me at anytime!</p>
                         <p>Below are some of my hobbies. Feel free to scroll through!</p>
-
-                            <html lang="en">
-                            <head>
-                                <meta charset="UTF-8">
-                                <meta name="viewport"
-                                      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-                                <meta http-equiv="X-UA-Compatible" content="ie=edge">
-                                <title>Document</title>
-                            </head>
-                            <body>
-                            
-                            </body>
-                            </html></p>
                     </h3>
                 </div>
             </h2>

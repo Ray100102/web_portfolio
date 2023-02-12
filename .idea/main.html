@@ -34,7 +34,7 @@
         <!-- Title Page -->
         <section class = "banner"  id = "home">
             <img class = "background" id = "img1"></img>
-            <img class = "profilepic" id = "pfp" image src = "img/pfp.jpeg"></img>
+            <img class = "profilepic" id = "pfp" image src = "image/pfp.jpeg"></img>
 
             <div class = "title">
                 Ray Guo
@@ -48,18 +48,68 @@
         <!-- About Me -->
         <section class = "About" id = "about">
             <br>
-            <h2 class = "section__title section__title--about">
+            <h2 class = "container">
                 About Me
-                <div class = "about-me" id>
-                    <h3 class = "section__desc section__desc--content">
+                <div class = "outer" id>
+                    <h3 class = "inner">
                         <p>I am currently a student at the University of Washington
-                            majoring in Computer Science with a minor in -.
-                            I'm a very multi-passionte person and am always trying something new!
+                            majoring in Computer Science.</p>
+                        <p>I'm a very multi-passionte person and am always trying something new!
                             Please feel free to connect with me at anytime!</p>
-                        <p>Below are some of my hobbies. Feel free to scroll through!</p>
                     </h3>
                 </div>
             </h2>
+        </section>
+
+        <script src = "https://kit.fontawesome.com/a076d05399.js"></script>
+        <!-- Image Slideshow -->
+        <section class = "aboutimages">
+            <div class = "slideshow">
+                <div class = "images">
+                    <img src = "img/1.jpeg">
+                    <img src = "img/2.jpeg">
+                    <img src = "img/3.jpeg">
+                    <img src = "img/dog.jpeg">
+                    <img src = "img/5.jpeg">
+                </div>
+                <div onclick="side_slide(-1)" class = "slide left">
+                    <span class = "fas fa-angle-left"></span>
+                </div>
+                <div onclick = "side_slide(1)" class = "slide right">
+                    <span class = "fas fa-angle-right"></span>
+                </div>
+                <div class = "sliders">
+                    <span onclick = "click_slide(1)"></span>
+                    <span onclick = "click_slide(2)"></span>
+                    <span onclick = "click_slide(3)"></span>
+                    <span onclick = "click_slide(4)"></span>
+                    <span onclick = "click_slide(5)"></span>
+                </div>
+            </div>
+
+            <script>
+                var indexValue = 1;
+                showImg(indexValue);
+                function click_slide(e){showImg(indexValue = e);}
+                function side_slide(e){showImg(indexValue +=e);}
+                function showImg(e){
+                    var i;
+                    const img = document.querySelectorAll('.images img');
+                    const sliders = document.querySelectorAll('.sliders span');
+                    if(e > img.length){
+                        indexValue = 1
+                    }
+                    if(e < 1){
+                        indexValue = img.length
+                    }
+                    for(i = 0; i < img.length; i++){
+                        img[i].style.display = "none";
+                        sliders[i].style.background = "none";
+                    }
+                    img[indexValue-1].style.display = "block";
+                    sliders[indexValue-1].style.background = "white";
+                }
+            </script>
         </section>
 
         <!-- Internships -->
@@ -67,17 +117,12 @@
             <br>
             <h2 class = "section__title section__title--about">
                 Internships
-                <div class = "about-me" id>
+                <div class = "internships" id>
                     <h3 class = "section__desc section__desc--content">
                         UI Path
-
-                        <p>I am currently a student at the University of Washington
-                            majoring in Computer Science with a minor in Philosophy.
-                            I'm a very multi-passionte person and am always trying something new!
-                            Please feel free to connect with me at anytime!</p>
-                        <p>Below are some of my hobbies. Feel free to scroll through!</p>
-
+                        <p>HighSchool Internship</p>
                     </h3>
+                    <img class = "UIpath" src = "image/UIlogo.png"></img>
                 </div>
             </h2>
         </section>

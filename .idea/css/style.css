@@ -1,6 +1,6 @@
 body {
-    background: #e0dbd1;
-    font-family: Arial, Helvetica, sans-serif;
+    background: #f6e0b5;
+    font-family: Verdana, sans-serif;
 }
 html
 {
@@ -57,7 +57,7 @@ header ul li a
 header.sticky
 {
     padding: 5px;
-    background: #808080;
+    background: #66545e;
 }
 
 /* Sticky color change */
@@ -106,7 +106,7 @@ header.sticky ul li a
 /*Title*/
 .title
 {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Verdana, sans-serif;
     text-align:center;
     font-size:80px;
     font-weight: bold;
@@ -122,7 +122,7 @@ header.sticky ul li a
 /*Subtitle*/
 .subtitle
 {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Verdana, sans-serif;
     text-align:center;
     font-size:20px;
     font-weight: bold;
@@ -136,9 +136,9 @@ header.sticky ul li a
 }
 
 /* About me title properties*/
-.About h2
+h2
 {
-    color:#E5C99F;
+    color:	#aa6f73;
     font-size:60px;
     text-align:center;
 }
@@ -247,14 +247,6 @@ header.sticky ul li a
     left: 0;
 }
 
-/* Intern title properties*/
-.Intern h2
-{
-    color:#E5C99F;
-    font-size:70px;
-    text-align:center;
-}
-
 /* Intern text properties*/
 .Intern h3
 {
@@ -263,12 +255,10 @@ header.sticky ul li a
     text-align:center;
 }
 
-/* Project title properties*/
-.Project h2
+.UIpath
 {
-    color:#E5C99F;
-    font-size:70px;
-    text-align:center;
+    position: relative;
+    border: 5px solid white;
 }
 
 /* Projects text properties*/
@@ -276,6 +266,92 @@ header.sticky ul li a
 {
     color:black;
     font-size:20px
+}
+
+/*box item properties*/
+.box-item {
+    display: block;
+    position: relative;
+    overflow: hidden;
+    max-width: 530px;
+    margin: auto auto 1rem;
+}
+
+.box-item .caption {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(33, 37, 41, 0.2);
+    position: absolute;
+    z-index: 1;
+}
+
+.box-item .caption .caption-content {
+    color: #fff;
+    margin: auto 2rem 2rem;
+    text-shadow: 0px 0px 20px #000000;
+}
+
+.box-item .caption .caption-content p {
+    font-weight: 900;
+    color: white;
+}
+
+.box-item .caption .caption-content h4 {
+    color: #eea990;
+}
+
+.box-item:hover .caption .caption-content h4 {
+    color: #eea990;
+}
+
+.box-item {
+    max-width: none;
+    margin: 0;
+}
+
+.box-item .caption {
+    -webkit-transition: -webkit-clip-path 0.25s ease-out, background-color 0.25s;
+    -webkit-clip-path: inset(0px);
+    clip-path: inset(0px);
+}
+
+.box-item .caption .caption-content {
+    transition: opacity 0.25s;
+    transition: text-shadow 0.25s;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.box-item .caption .caption-content h4 {
+    transition: color 0.25s;
+}
+
+.box-item img {
+    -webkit-transition: -webkit-clip-path 0.25s ease-out;
+    -webkit-clip-path: inset(-1px);
+    clip-path: inset(-1px);
+}
+
+.box-item:hover img {
+    -webkit-clip-path: inset(1rem);
+    clip-path: inset(1rem);
+}
+
+.box-item:hover .caption {
+    background-color: rgba(40, 130, 180, 0.6);
+    -webkit-clip-path: inset(1rem);
+    clip-path: inset(1rem);
+}
+.box-item:hover .caption .caption-content {
+    text-shadow: none;
+}
+
+.portfolio-img {
+    width: 20vh;
+    height: 40vh;
+    width: 100%;
 }
 
 /* footer format*/
@@ -303,4 +379,5 @@ footer ul li a
     letter-spacing: 2px;
     font-weight: 500px;
     transition: 0.5s;
+}
 }

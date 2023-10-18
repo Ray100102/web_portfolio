@@ -11,15 +11,15 @@
         <link href = "css/style.css" rel = "stylesheet" >
     </head>
 
-    <body>
+    <body class>
         <!-- Sticky Navigation Header-->
         <header>
             <nav class = "nav">
                 <ul class = "nav__list">
                     <li class = "nav__item"><a href="#home" class = "nav__link"><Home>Home</Home></a></li>
                     <li class = "nav__item"><a href="#about" class = "nav__link">About Me</a></li>
-                    <li class = "nav__item"><a href="#intern" class = "nav__link">Internships</a></li>
                     <li class = "nav__item"><a href="#projects" class = "nav__link">Projects</a></li>
+                    <li class = "nav__item"><a href="#intern" class = "nav__link">Internships</a></li>
                     <li class = "nav__item"><a href="#footer" class = "nav__link">Socials</a></li>
                 </ul>
             </nav>
@@ -33,7 +33,8 @@
 
         <!-- Title Page -->
         <section class = "banner"  id = "home">
-            <img class = "background" id = "img1"></img>
+            <div class="intro-container">
+            </div>
             <img class = "profilepic" id = "pfp" image src = "image/pfp.jpeg"></img>
 
             <div class = "title">
@@ -63,7 +64,7 @@
 
         <script src = "https://kit.fontawesome.com/a076d05399.js"></script>
         <!-- Image Slideshow -->
-        <section class = "aboutimages">
+       <!-- <section class = "aboutimages">
             <div class = "slideshow">
                 <div class = "images">
                     <img src = "img/1.jpeg">
@@ -110,28 +111,7 @@
                     sliders[indexValue-1].style.background = "white";
                 }
             </script>
-        </section>
-
-        <!-- Internships -->
-        <section class="Intern" id="intern">
-            <br>
-            <h2 class = "projects-about">
-                Internships
-            </h2>
-            <div class="items">
-                <div class="box">
-                    <a class="box-item" data-toggle="modal" href="#popup">
-                            <span class="caption">
-                                <span class="caption-content">
-                                    <h4>UIPath</h4>
-                                    <p class="mb-0">High School Internship</p>
-                                </span>
-                            </span>
-                        <img class="img-fluid portfolio-img" src="image/UIlogo.png" alt="">
-                    </a>
-                </div>
-            </div>
-        </section>
+        </section> -->
 
         <!-- My Projects -->
         <section class="Project" id="projects">
@@ -139,30 +119,39 @@
             <h2 class = "projects-about">
                 Projects
             </h2>
-                <div class="items">
-                    <div class="box">
-                        <a class="box-item" data-toggle="modal" href="#popup">
-                            <span class="caption">
-                                <span class="caption-content">
-                                    <h4>Battlecode</h4>
-                                    <p class="mb-0">MIT AI Robot Competition</p>
-                                </span>
-                            </span>
-                            <img class="img-fluid portfolio-img" src="image/battlecode.png" alt="">
-                        </a>
-                    </div>
-                    <div class="box">
-                        <a class="box-item" data-toggle="modal" href="#popup">
-                            <span class="caption">
-                                <span class="caption-content">
-                                    <h4>Personal Wesbsite</h4>
-                                    <p class="mb-0">What you're looking at now :)</p>
-                                </span>
-                            </span>
-                            <img class="img-fluid portfolio-img" src="image/web.png" alt="">
-                        </a>
-                    </div>
+            <div class="projects-container">
+                <div class="project-box box-1">
+                    <h2>Project 1</h2>
+                    <p>Description of Project 1</p>
                 </div>
+                <div class="project-box box-2">
+                    <h2>Project 2</h2>
+                    <p>Description of Project 2</p>
+                </div>
+                <div class="project-box box-3">
+                    <h2>Project 3</h2>
+                    <p>Description of Project 3</p>
+                </div>
+                <div class="project-box box-4">
+                    <h2>Project 4</h2>
+                    <p>Description of Project 4</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Internships -->
+        <section class="Intern" id="intern">
+            <br>
+            <h2 class = "project-about">
+                Internships
+            </h2>
+            <h2 class = "intern-container">
+                <div class="intern-box box-5">
+                    <h2>Internship</h2>
+                    <p>Description of Internship</p>
+                </div>
+            </h2>
+
         </section>
 
         <!-- Footer -->
@@ -191,10 +180,11 @@
                         Resume
                     </a>
                 </li>
-
-
             </ul>
-
+            <ul>
+            </ul>
+            <ul>
+            </ul>
         </footer>
 
     </body>

@@ -120,7 +120,7 @@ header.sticky ul li a
     opacity: 1;
     text : center;
     position : absolute;
-    top: 53%;
+    top: 51%;
     left: 50%;
     transform: translate(-50%, -50%);
 }

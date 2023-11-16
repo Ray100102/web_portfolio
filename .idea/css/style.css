@@ -1,7 +1,5 @@
 body {
     background:#141414;
-    background-image:radial-gradient(circle at 100% 100%, transparent 50%, white 100%); /* Create specks with a radial gradient */
-    background-size: 10px 10px; /* Control the density and size of specks */
     font-family: Verdana, sans-serif;
     margin: -1.5vh;
     padding: 0vh;
@@ -52,7 +50,7 @@ header ul li a
     position: relative;
     margin: 0 20px;
     text-decoration: none;
-    color: black;
+    color: #e0dbd1;
     letter-spacing: 5px;
     font-weight: 500px;
     transition: 0.5s;
@@ -63,7 +61,7 @@ header ul li a
 header.sticky
 {
     padding: 5px;
-    background: #66545e;
+    background: #1f242e;
 }
 
 /* Sticky color change */
@@ -102,7 +100,7 @@ header.sticky ul li a
     text-align:center;
     font-size:60px;
     font-weight: bold;
-    color: 	#1B1212;
+    color: 	#e0dbd1;
     opacity: 1;
     text : center;
     position : absolute;
@@ -118,7 +116,7 @@ header.sticky ul li a
     text-align:center;
     font-size:15px;
     font-weight: bold;
-    color: 	#1B1212;
+    color: 	#e0dbd1;
     opacity: 1;
     text : center;
     position : absolute;
@@ -140,7 +138,7 @@ h2
 
 .About h3
 {
-    color:black;
+    color: 	#e0dbd1;
     font-size:15px;
     text-align:center;
 }

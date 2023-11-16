@@ -63,55 +63,6 @@
         </section>
 
         <script src = "https://kit.fontawesome.com/a076d05399.js"></script>
-        <!-- Image Slideshow -->
-       <!-- <section class = "aboutimages">
-            <div class = "slideshow">
-                <div class = "images">
-                    <img src = "img/1.jpeg">
-                    <img src = "img/2.jpeg">
-                    <img src = "img/3.jpeg">
-                    <img src = "img/dog.jpeg">
-                    <img src = "img/5.jpeg">
-                </div>
-                <div onclick="side_slide(-1)" class = "slide left">
-                    <span class = "fas fa-angle-left"></span>
-                </div>
-                <div onclick = "side_slide(1)" class = "slide right">
-                    <span class = "fas fa-angle-right"></span>
-                </div>
-                <div class = "sliders">
-                    <span onclick = "click_slide(1)"></span>
-                    <span onclick = "click_slide(2)"></span>
-                    <span onclick = "click_slide(3)"></span>
-                    <span onclick = "click_slide(4)"></span>
-                    <span onclick = "click_slide(5)"></span>
-                </div>
-            </div>
-
-            <script>
-                var indexValue = 1;
-                showImg(indexValue);
-                function click_slide(e){showImg(indexValue = e);}
-                function side_slide(e){showImg(indexValue +=e);}
-                function showImg(e){
-                    var i;
-                    const img = document.querySelectorAll('.images img');
-                    const sliders = document.querySelectorAll('.sliders span');
-                    if(e > img.length){
-                        indexValue = 1
-                    }
-                    if(e < 1){
-                        indexValue = img.length
-                    }
-                    for(i = 0; i < img.length; i++){
-                        img[i].style.display = "none";
-                        sliders[i].style.background = "none";
-                    }
-                    img[indexValue-1].style.display = "block";
-                    sliders[indexValue-1].style.background = "white";
-                }
-            </script>
-        </section> -->
 
         <!-- My Projects -->
         <section class="Project" id="projects">

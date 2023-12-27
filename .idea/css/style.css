@@ -55,6 +55,7 @@ header ul li a
     font-weight: 500px;
     transition: 0.5s;
     font-size : 15px;
+    white-space: nowrap;
 }
 
 /*Sticky header properties*/
@@ -107,6 +108,7 @@ header.sticky ul li a
     top: 46%;
     left: 50%;
     transform: translate(-50%, -50%);
+    white-space: nowrap;
 }
 
 /*Subtitle*/
@@ -125,27 +127,28 @@ header.sticky ul li a
     transform: translate(-50%, -50%);
 }
 
-/* About me title properties*/
+/* Title properties*/
 h2
 {
-    color: white; /* Midnight blue text color */
-    font-size: 30px; /* Adjust the font size as needed */
-    font-weight: 1; /* Apply a bold font weight for emphasis */
+    color: white;
+    font-size: 30px;
+    font-weight: 1;
     text-align: center; /* Center-align the text */
     letter-spacing: 7px; /* Add letter spacing for a stylish look */
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Apply a subtle text shadow */
 }
 
+/* About me text properties*/
 .About h3
 {
     font-weight: normal;
     color: #e0dbd1;
     font-size: 15px;
     text-align: left;
-    margin-top: 10px;    /* Add top margin */
-    margin-bottom: 10px; /* Add bottom margin */
-    margin-left: 200px;   /* Add left margin */
-    margin-right: 200px;  /* Add right margin */
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 200px;
+    margin-right: 200px;
 }
 
 @media (max-width: 1000px) {
@@ -154,41 +157,19 @@ h2
     }
 }
 
+/* Alter first sentence propertes */
 .About p.first {
         font-size: 20px;
 }
 
+/* About text properties */
 .About p {
     letter-spacing: 0;
     margin-top: 20px; /* Adjust the top margin as needed */
     margin-bottom: 20px; /* Adjust the bottom margin as needed */
 }
-/* About me text properties*/
-.About outer
-{
-    width:100%
-    padding-top: 75%;
-    position: relative;
 
-    /*background-color:#8e8e90;*/
-}
-
-.About inner
-{
-    position:absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-}
-
-/* Projects text properties*/
-.Project h3
-{
-    color:black;
-    font-size:20px
-}
-
+/* Container properties*/
 .project-box {
     background-size: cover;
     color: white;
@@ -285,32 +266,9 @@ h2
     background: url(img/UW.png) center/cover no-repeat;
 }
 
-.intern-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: flex-start; /* Align to the top of the container */
-    padding: 40px;
-}
-
-.box-5 {
-    background-image: url(img/UIlogo.png); /* Replace with the URL of the first image */
-}
-
-.intern-box {
-    background-size: cover;
-    color: white;
-    border: 1px solid #333;
-    padding: 10px;
-    width: 45%;
-    text-align: center;
-    cursor: pointer;
-    transition: background 0.3s, transform 0.3s;
-}
-
-.intern-box:hover {
-    background-size: cover;
-    transform: scale(1.02);
+.project7 {
+    background: url(img/UIlogo.png) center/cover no-repeat;
+    opacity: 80%
 }
 
 /* footer format*/
@@ -320,6 +278,7 @@ footer ul
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-right : 30px
 }
 
 /* Footer list property*/

@@ -55,7 +55,7 @@ header ul li a
     letter-spacing: 5px;
     font-weight: 500px;
     transition: 0.5s;
-    font-size : 15px;
+    font-size : 25px;
     white-space: nowrap;
 }
 
@@ -149,7 +149,7 @@ header.sticky ul li a
 h2
 {
     color: white;
-    font-size: 30px;
+    font-size: 40px;
     font-weight: 1;
     text-align: center;
     letter-spacing: 7px;
@@ -160,10 +160,8 @@ h2
 /* About me text properties*/
 .About h3
 {
-
     font-weight: normal;
     color: #e0dbd1;
-    font-size: 15px;
     text-align: left;
     margin-top: 10px;
     margin-bottom: 10px;
@@ -171,12 +169,28 @@ h2
     margin-right: 400px;
 }
 
+/* Alter first sentence propertes */
+.About p.first {
+        font-size: 30px;
+}
 
+/* About text properties */
+.About p {
+    font-size: 22px;
+    letter-spacing: 0;
+    margin-top: 20px; /* Adjust the top margin as needed */
+    margin-bottom: 20px; /* Adjust the bottom margin as needed */
+}
 
 @media (max-width: 1300px) {
     .About h3 {
         margin-left: 200px;
         margin-right: 200px;
+    }
+    header ul li a
+    {
+        letter-spacing: 0px;
+        font-size: 20px;
     }
 }
 
@@ -189,20 +203,9 @@ h2
     header ul li a
     {
         letter-spacing: 0px;
+        font-size: 15px;
     }
 
-}
-
-/* Alter first sentence propertes */
-.About p.first {
-        font-size: 20px;
-}
-
-/* About text properties */
-.About p {
-    letter-spacing: 0;
-    margin-top: 20px; /* Adjust the top margin as needed */
-    margin-bottom: 20px; /* Adjust the bottom margin as needed */
 }
 
 /* Container properties*/
@@ -237,8 +240,8 @@ h2
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     margin: 20px;
     overflow: hidden;
-    width: 400px;
-    height: 300px;
+    width: 500px;
+    height: 400px;
     transition: transform 0.3s ease-in-out;
     opacity: 70%;
 }
@@ -265,27 +268,34 @@ h2
 }
 
 .modal-content {
-    background-color: #fff;
+    background-color: #111;
     border-radius: 8px;
     overflow: hidden;
-    max-width: 600px;
+    max-width: 900px;
     padding: 20px;
     position: relative;
+    font-size : 20px;
+}
+
+.modal-content p {
+    color : white;
 }
 
 .close-modal {
     position: absolute;
-    top: 10px;
+    top: 0px;
     right: 10px;
+    font-size: 50px;
     cursor: pointer;
+    color: white;
 }
 
 .project1 {
-    background: url(img/battlecodexdd.png) center/cover no-repeat;
+    background: url(img/bc.png) center/cover no-repeat;
 }
 
 .project2 {
-    background: url(img/SUZ.jpg) center/cover no-repeat;
+    background: url(img/pacman.png) center/cover no-repeat;
 }
 
 .project3 {

@@ -204,24 +204,43 @@
                 </div>
             </div>
             <!-- Intern Modals -->
-            <div class="modal" id="modal7" >
+            <div class="modal" id="modal7">
                 <div class="modal-content">
                     <span class="close-modal" onclick="closeModal('modal7')">&times;</span>
                     <h2>Project 7</h2>
                     <p>Detailed information about Project 7.</p>
                 </div>
             </div>
+        </div>
 
-            <script>
+        <script>
             function openModal(modalId) {
+                event.stopPropagation();
                 document.getElementById(modalId).style.display = "flex";
             }
 
             function closeModal(modalId) {
                 document.getElementById(modalId).style.display = "none";
             }
-            </script>
-        </div>
+
+            // Close upon clicking outside modal
+            document.addEventListener("click", function(event) {
+                var modals = document.querySelectorAll(".modal");
+                modals.forEach(function(modal) {
+                    if (event.target === modal) {
+                        closeModal(modal.id);
+                    }
+                });
+            });
+
+            // Hide modals on refresh bugfix
+            document.addEventListener("DOMContentLoaded", function() {
+                var modals = document.querySelectorAll(".modal");
+                modals.forEach(function(modal) {
+                modal.style.display = "none";
+                });
+            });
+        </script>
 
         <!-- Footer -->
         <footer id = "footer">
@@ -251,5 +270,7 @@
                 </li>
             </ul>
         </footer>
+        <br>
+        <br>
     </body>
 </html>

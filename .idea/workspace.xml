@@ -5,13 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a29f092e-3d8e-4ad7-a32f-12658ab5cd0e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/css/img/bc.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/css/img/pacman.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/css/img/campusMap.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/css/img/google.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/img/background.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/img/gasworks.jpeg" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/image/web.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -58,7 +55,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "SONARLINT_PRECOMMIT_ANALYSIS": "true",
-    "last_opened_file_path": "C:/Users/rguo1/IdeaProjects/web_portfolio/css/img",
+    "last_opened_file_path": "C:/Users/rguo1/Downloads/p2-beaver-master",
     "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.0",

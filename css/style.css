@@ -57,6 +57,7 @@ header ul li a
     transition: 0.5s;
     font-size : 25px;
     white-space: nowrap;
+    font-family: Georgia
 }
 
 /*Sticky header properties*/
@@ -167,16 +168,17 @@ h2
     margin-bottom: 10px;
     margin-left: 400px;
     margin-right: 400px;
+    font-family: Georgia
 }
 
 /* Alter first sentence propertes */
 .About p.first {
-        font-size: 30px;
+        font-size: 25px;
 }
 
 /* About text properties */
 .About p {
-    font-size: 22px;
+    font-size: 20px;
     letter-spacing: 0;
     margin-top: 20px; /* Adjust the top margin as needed */
     margin-bottom: 20px; /* Adjust the bottom margin as needed */
@@ -220,6 +222,7 @@ h2
     cursor: pointer;
     transition: background 0.3s, transform 0.3s;
     height: 300px;
+    background-size: contain;
 }
 
 .project-box:hover {
@@ -231,19 +234,19 @@ h2
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    padding: 20px;
+    padding: 10px;
 }
 
 .project-card {
     background-color: #fff;
-    border-radius: 8px;
+    border-radius: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     margin: 20px;
     overflow: hidden;
     width: 500px;
-    height: 400px;
+    height: 500px;
     transition: transform 0.3s ease-in-out;
-    opacity: 70%;
+    opacity: 50%;
 }
 
 .project-card:hover {
@@ -275,6 +278,7 @@ h2
     padding: 20px;
     position: relative;
     font-size : 20px;
+    font-family: Georgia
 }
 
 .modal-content p {
@@ -303,15 +307,16 @@ h2
 }
 
 .project4 {
-    background: url(img/UW.png) center/cover no-repeat;
+    background: url(img/campusMap.png) center/cover no-repeat;
 }
 
 .project5 {
-    background: url(img/UW.png) center/cover no-repeat;
+    background: url(img/bot.png) center/cover no-repeat;
+    background-size: 100% 100%
 }
 
 .project6 {
-    background: url(img/campusMap.png) center/cover no-repeat;
+    background: url(img/query.png) center/cover no-repeat;
 }
 
 .project7 {

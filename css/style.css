@@ -184,6 +184,10 @@ h2
     margin-bottom: 20px; /* Adjust the bottom margin as needed */
 }
 
+.no-indent p {
+    text-indent : 0px !important;
+}
+
 @media (max-width: 1300px) {
     .About h3 {
         margin-left: 200px;
@@ -207,7 +211,6 @@ h2
         letter-spacing: 0px;
         font-size: 15px;
     }
-
 }
 
 /* Container properties*/
@@ -268,6 +271,7 @@ h2
     background-color: rgba(0, 0, 0, 0.7);
     justify-content: center;
     align-items: center;
+
 }
 
 .modal-content {
@@ -279,10 +283,13 @@ h2
     position: relative;
     font-size : 20px;
     font-family: Georgia
+
+
 }
 
 .modal-content p {
     color : white;
+      text-indent: 50px;
 }
 
 .close-modal {
@@ -291,6 +298,12 @@ h2
     right: 10px;
     font-size: 50px;
     cursor: pointer;
+    color: white;
+}
+
+.modal-subtitle {
+    font-size : 30px;
+    position: relative;
     color: white;
 }
 
@@ -321,6 +334,11 @@ h2
 
 .project7 {
     background: url(img/UIlogo.png) center/cover no-repeat;
+    opacity: 80%
+}
+
+.project8 {
+    background: url(img/stealth.png) center/cover no-repeat;
     opacity: 80%
 }
 

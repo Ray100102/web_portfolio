@@ -38,7 +38,6 @@
                 <img class = "profilepic" id = "pfp" image src = "image/pfp.jpeg"></img>
                 <p class = "title"> Ray Guo</p>
                 <p class = "subtitle"> CS Student @ The University of Washington - Seattle</p>
-                <p class = "warning"> Note: THIS WEBSITE IS STILL A WORK IN PROGRESS </p>
             </div>
 
 
@@ -54,21 +53,24 @@
                 <h3>
                     <p class = "first"> Hello! I'm Ray,
                         a CS student at the University of Washington!
-
                     </p>
 
                     <p> Alongside majoring in computer science, I'm also pursuing a minor in philosophy,
                         to hone my critical thinking skills
                         and to broader perspective on the societal impacts of computing. </p>
 
-                    <p> I'm currently looking for any SWE opportunity I can get to further my career in computer
-                    science.</p>
+                    <p> I'm currently looking for any SWE or Project Manager roles I can get to further my career in computer
+                    science industry!</p>
 
-                    <p> While I'm in the early stages of my career, I am skilled with programming languages like
-                        Java, C++, and Python. My goal is to expand my coding skills and explore new technologies.</p>
+                    <p> I am skilled with programming languages like
+                        Java, C++, and Python, and am familiar with frameworks like next.js, node.js, and more.
+                        My  goal is to expand my coding skills and explore new technologies.</p>
 
-                    <p> Alongside this website, I've been working on personal projects to
-                        apply my knowledge to real-world scenarios.
+                    <p> I am driven by a passion to create products that prioritize user-friendliness.
+                        My ultimate goal is to build solutions that seamlessly integrate into users' lives, providing a smooth and intuitive experience.</p>
+
+                    <p> Alongside working this website, I've been working on personal projects to
+                        increase my knowledge for computer science.
                         Scroll down to check out some of those projects!</p>
                 </h3>
             </h2>
@@ -113,6 +115,7 @@
                 <!-- Project 6 with a different background image -->
                 <div class="project-card project6" id="project6" onclick="openModal('modal6')">
                     <div class="project-content">
+
                     </div>
                 </div>
 
@@ -129,6 +132,10 @@
             </h2>
             <div class="projects-container">
                 <!-- Intern 1 -->
+                <div class="project-card project8" id="project8" onclick="openModal('modal8')">
+                    <div class="project-content">
+                    </div>
+                </div>
                 <div class="project-card project7" id="project7" onclick="openModal('modal7')">
                     <div class="project-content">
                     </div>
@@ -141,14 +148,41 @@
             <div class="modal" id="modal1" >
                 <div class="modal-content">
                     <span class="close-modal" onclick="closeModal('modal1')">&times;</span>
-                    <h2>Project 1</h2>
+                    <h2 class = "modal-title">MIT BattleCode</h2>
+                    <div class = "modal-subtitle">Overview</div>
                     <p>Battlecode, MIT's annual AI programming competition, spans a month with changing themes.
                         Teams of up to four submit their bots on the website, engaging in virtual battles using an ELO rating system.
                         The season includes four online competitions: Sprint 1, Sprint 2, Qualifying tournaments, and the final tournament.
                         The top 12 US and leading 4 International teams compete at MIT for prizes over $20,000 in the final week.</p>
                     <p>
-                        Please look at our teams postmortem to learn more!
-                        https://battlecode.org/assets/files/postmortem-2023-dont-at-me.pdf</p>
+                    <div class = "modal-subtitle">Process</div>
+                    <p>The core of the project involved the development of efficient grid pathing algorithms.
+                        These algorithms were engineered to facilitate optimal navigation for the robotic system.
+                        Rigorous testing and optimization ensured that the chosen pathing algorithms were both reliable and efficient,
+                        contributing to the overall effectiveness of the robotic navigation system.</p>
+
+                    <p> Robotic state management was a pivotal aspect of the project, requiring careful consideration and precision.
+                        The state management system was designed to handle the diverse states and transitions of the robotic system seamlessly.
+                        This component played a crucial role in maintaining a clear and organized structure for decision-making processes.</p>
+
+                    <p>Decision-making systems were implemented to enhance the autonomy of the robotic system.
+                        These systems were intricately designed to analyze information from the environment, interpret it, and make informed decisions.
+                        The efficiency of the decision-making process was a key focus, ensuring the robotic system could adapt to dynamic situations in real-time.</p>
+
+                    <p>Throughout the development process, version control played a vital role in maintaining project integrity and collaboration.
+                        Four intense week long sprints were executed, with version control systems effectively managing code changes and ensuring a cohesive development environment.
+                        The result was the successful delivery of a project boasting 4,000 lines of code,
+                        reflecting the collaborative effort and meticulous planning invested in the development process.</p>
+                    <div class = "modal-subtitle">Source Code and Post-Mortem</div>
+                    <a class = "social-list__link" href = "https://github.com/georgezhang02/battlecode23" target="_blank">
+                        Github Repo Link
+                    </a>
+                    <br>
+                    <br>
+                    <a class = "social-list__link" href = "https://battlecode.org/assets/files/postmortem-2023-dont-at-me.pdf" target="_blank">
+                        PostMortem Link
+                    </a>
+
                 </div>
             </div>
 
@@ -171,27 +205,99 @@
             <div class="modal" id="modal4" >
                 <div class="modal-content">
                     <span class="close-modal" onclick="closeModal('modal4')">&times;</span>
-                    <h2>Project 4</h2>
-                    <p>Detailed information about Project 4.</p>
+                    <h2 class = "modal-title">UW Campus Maps</h2>
+                    <div class = "modal-subtitle">Overview</div>
+                    <p>The creation of the UW campus map involved a meticulous process of designing modular components, each rigorously tested to ensure reliability and efficiency.
+                        These components encompassed a versatile graph class, a dedicated campus map class, a backend Java Spark server, and frontend elements built in React.</p>
+                    <div class = "modal-subtitle">Process</div>
+                    <p>During the development phase, Dijkstra's algorithm takes center stage as the key mechanism for calculating the shortest paths between
+                        various building locations on the UW Seattle campus.
+                        This algorithm, known for its effectiveness in finding the shortest path in a weighted graph, is harnessed to ensure accurate and
+                        efficient route calculations within the application</p>
+
+                    <p>In the React component implementation, we incorporated an image of the campus map, mapping each coordinate point to the respective x and y coordinates on the map.
+                        Leveraging the power of two threads in the Spark Java component, we successfully retrieved a comprehensive list of buildings along with their
+                        corresponding coordinates. To enhance user experience, we implemented two dropdown menus on the client side, allowing clients to effortlessly choose
+                        their starting location and destination. This design choice effectively prevented the occurrence of invalid inputs from the client side.
+                        The backend seamlessly processed the request, returning a list of coordinates representing the shortest path.
+                        This information was then dynamically utilized to update the webpage, visually displaying the optimal path on the campus map image.</p>
+
+                    <div class = "modal-subtitle">Source Code</div>
+                    <p>Contact me through email to get access to the following code.
+                        Access has been restricted since the project is an ongoing homework project for
+                        CSE 331 Software Design and Implementation at UW Seattle.</p>
                 </div>
             </div>
 
             <div class="modal" id="modal5" >
                 <div class="modal-content">
                     <span class="close-modal" onclick="closeModal('modal5')">&times;</span>
-                    <h2>Project 5</h2>
-                    <p>Detailed information about Project 5.</p>
+                    <h2 class = "modal-title">UMessage</h2>
+                    <div class = "modal-subtitle">Overview</div>
+                    <p>The project entails the proficient design, implementation, and optimization of essential data structures using Java.
+                        Noteworthy structures include a chaining hash table, a min heap, and an AVL tree. These structures are seamlessly integrated into the backend of a robust chat application.
+                        The chat application, as a result, boasts advanced functionalities, including word suggestion, spelling correction, and auto-completion.</p>
+                    <div class = "modal-subtitle">Process</div>
+                    <p>In the implementation phase, the focus is on crafting efficient data structures.
+                    The chaining hash table employs a robust hashing technique for enhanced data organization and retrieval speed.
+                    The min heap prioritizes operations based on urgency, contributing to swift processing within the application.</p>
+
+                    <p>The technical implementation of the AVL tree is crucial. This self-balancing binary search tree ensures optimal performance by automatically maintaining
+                    balance during insertions and deletions. This balancing act significantly enhances search operation efficiency within the chat application</p>
+
+                    <p> Moving to the backend integration, the chaining hash table powers the word suggestion feature,
+                    predicting and offering relevant words during conversations. Simultaneously, the min heap contributes to the application's responsiveness,
+                    especially in tasks prioritizing urgency.</p>
+
+                    <p>The project's success lies in the efficient implementation of these data structures.
+                    The technical nuances of the AVL tree and optimized hashing techniques significantly impact the backend,
+                    ultimately enhancing the user experience in the feature-rich chat application.</p>
+                    <div class = "modal-subtitle">Source Code</div>
+                    <p>Contact me through email to get access to the following code.
+                        Access has been restricted since the project is an ongoing homework project for
+                        CSE 332 Data Structures at UW Seattle.</p>
                 </div>
             </div>
 
             <div class="modal" id="modal6" >
                 <div class="modal-content">
                     <span class="close-modal" onclick="closeModal('modal6')">&times;</span>
-                    <h2>Project 6</h2>
-                    <p>Detailed information about Project 6.</p>
+                    <h2 class = "modal-title">Flight Query</h2>
+                    <div class = "modal-subtitle">Overview</div>
+                    <p>Imported and managed a Flight Database on Azure, enabling user registration and flight bookings through a Java terminal.
+                        Implemented a 2-phase locking mechanism for concurrent bookings, ensuring data integrity with prioritized security using hashed and salted passwords.
+                        Demonstrates proficiency in database management, Java programming, and user-centric design.
+                        The process involved rigorous attention to detail and security considerations.</p>
+                    <div class = "modal-subtitle">Process</div>
+                    <p> As a key part of the project, I imported a Flight Database onto Azure, incorporating separate schemas for user information and
+                        flight reservations. User registrations seamlessly integrated with the database, and upon logging into the Java terminal, users could efficiently
+                        explore and book flights based on specified city parameters.</p>
+
+                    <p> To handle concurrent flight bookings by multiple users, a 2-phase locking mechanism with commit and rollback functionality was implemented.
+                        This mechanism ensured data consistency during transactions. Transactions initiated upon user access to the database, progressing to the commit phase only
+                        upon the successful completion of all database changes. In cases of unsuccessful commits, the system seamlessly rolled back to the transaction's initial state,
+                        facilitating a retry mechanism.</p>
+
+                    <p> =The database structure was designed with precision, featuring key tables and well-defined relationships.
+                        User authentication prioritized security, employing robust hashing and salting techniques for password protection.
+                        Concurrency control measures were implemented to manage simultaneous user interactions, preventing conflicts and ensuring data integrity.
+                        Integration with Azure services optimized data transfer and leveraged the platform's capabilities.</p>
+                    <div class = "modal-subtitle">Source Code</div>
+                    <p>Contact me through email to get access to the following code.
+                        Access has been restricted since the project is an ongoing homework project for
+                        CSE 344 Intro to Data Management at UW Seattle.</p>
                 </div>
             </div>
+
             <!-- Intern Modals -->
+            <div class="modal" id="modal8">
+                <div class="modal-content">
+                    <span class="close-modal" onclick="closeModal('modal8')">&times;</span>
+                    <h2>Project 7</h2>
+                    <p>Detailed information about Project 7.</p>
+                </div>
+            </div>
+
             <div class="modal" id="modal7">
                 <div class="modal-content">
                     <span class="close-modal" onclick="closeModal('modal7')">&times;</span>
@@ -252,7 +358,7 @@
                 </li>
 
                 <li class = "social-list__item">
-                    <a class = "social-list__link" href = "https://github.com/Ray100102" target="_blank">
+                    <a class = "social-list__link" href = "https://docs.google.com/document/d/1j7X3W4g6f2_MJbJ_VA6F_f543PWP9NX2/edit?usp=sharing&ouid=117496396210759183966&rtpof=true&sd=true" target="_blank">
                         Resume
                     </a>
                 </li>

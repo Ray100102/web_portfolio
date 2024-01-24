@@ -57,17 +57,16 @@
 
                     <p> Alongside majoring in computer science, I'm also pursuing a minor in philosophy,
                         to hone my critical thinking skills
-                        and to broader perspective on the societal impacts of computing. </p>
+                        and to broader my perspective on the societal impacts of computing. </p>
 
                     <p> I'm currently looking for any SWE or Project Manager roles I can get to further my career in computer
                     science industry!</p>
 
-                    <p> I am skilled with programming languages like
-                        Java, C++, and Python, and am familiar with frameworks like next.js, node.js, and more.
-                        My  goal is to expand my coding skills and explore new technologies.</p>
-
                     <p> I am driven by a passion to create products that prioritize user-friendliness.
                         My ultimate goal is to build solutions that seamlessly integrate into users' lives, providing a smooth and intuitive experience.</p>
+
+                    <p> I am skilled with programming languages like
+                        Java, C++, and Python, and am familiar with frameworks like next.js, node.js, and more.</p>
 
                     <p> Alongside working this website, I've been working on personal projects to
                         increase my knowledge for computer science.
@@ -150,22 +149,23 @@
                     <span class="close-modal" onclick="closeModal('modal1')">&times;</span>
                     <h2 class = "modal-title">MIT BattleCode</h2>
                     <div class = "modal-subtitle">Overview</div>
-                    <p>Battlecode, MIT's annual AI programming competition, spans a month with changing themes.
+                    <p> Battlecode, MIT's annual AI programming competition, spans just over a month with changing themes every year.
                         Teams of up to four submit their bots on the website, engaging in virtual battles using an ELO rating system.
                         The season includes four online competitions: Sprint 1, Sprint 2, Qualifying tournaments, and the final tournament.
-                        The top 12 US and leading 4 International teams compete at MIT for prizes over $20,000 in the final week.</p>
+                        The top 12 US and leading 4 International teams are flown out to compete at MIT for prizes over $20,000 in the final week.</p>
                     <p>
                     <div class = "modal-subtitle">Process</div>
-                    <p>The core of the project involved the development of efficient grid pathing algorithms.
+                    <p>The core of the project involved the development of efficient grid pathing algorithms, such as Bellman-Ford and Bugnav.
                         These algorithms were engineered to facilitate optimal navigation for the robotic system.
                         Rigorous testing and optimization ensured that the chosen pathing algorithms were both reliable and efficient,
                         contributing to the overall effectiveness of the robotic navigation system.</p>
 
                     <p> Robotic state management was a pivotal aspect of the project, requiring careful consideration and precision.
-                        The state management system was designed to handle the diverse states and transitions of the robotic system seamlessly.
+                        Whether a bot was in combat mode, in heal mode, was in a state to go to a certain location, etc. were all critical in victory.
+                        The state management system was designed to handle the diverse states and transitions of the robotic systems.
                         This component played a crucial role in maintaining a clear and organized structure for decision-making processes.</p>
 
-                    <p>Decision-making systems were implemented to enhance the autonomy of the robotic system.
+                    <p> Decision-making systems were implemented to enhance the autonomy of the robotic system.
                         These systems were intricately designed to analyze information from the environment, interpret it, and make informed decisions.
                         The efficiency of the decision-making process was a key focus, ensuring the robotic system could adapt to dynamic situations in real-time.</p>
 
@@ -189,16 +189,82 @@
             <div class="modal" id="modal2" >
                 <div class="modal-content">
                     <span class="close-modal" onclick="closeModal('modal2')">&times;</span>
-                    <h2>Project 2</h2>
-                    <p>Detailed information about Project 2.</p>
+                    <h2>Pacman AI</h2>
+                    <div class = "modal-subtitle">Overview</div>
+                    <p>Developed a Python-based AI agent for Pacman, focusing on efficient pathfinding through mazes and optimizing food collection.
+                        The project leveraged various search algorithms, including DFS, BFS, and A*, to influence the path of the Pacman agent.
+                        Additionally, the implementation incorporated minimax and expectimax algorithms to enhance Pacman's
+                        AI strategy, specifically in dealing with ghosts. The project also simulated the environment as an unknown Markov Decision Process,
+                        facilitating intelligent decision-making through reinforcement learning techniques.
+                    </p>
+
+                    <div class = "modal-subtitle">Process</div>
+                    <p>The foundation of the project involved designing a Pacman AI agent capable of navigating through mazes and collecting food efficiently.
+                    The implementation was carried out in Python, utilizing the strengths of the language for AI-related tasks.</p>
+
+                    <p> The pathfinding aspect of the project was tackled through the integration of search algorithms.
+                    Depth-First Search (DFS), Breadth-First Search (BFS), and A* were employed to influence the movement of the Pacman agent within the maze.
+                    These algorithms played a crucial role in determining optimal paths, contributing to the efficiency of food collection.</p>
+
+                    <p>In addition to pathfinding, strategic decision-making against ghosts was addressed using minimax and expectimax algorithms.
+                    These decision-making algorithms were exploited to enhance Pacman's ability to navigate the maze while anticipating and countering the actions of ghosts.
+                    The incorporation of these algorithms added a layer of intelligence to Pacman's overall strategy.</p>
+
+                    <p> The Markov Decision Process is utilized to model the decision-making process of Pac-Man in its environment.
+                        An MDP consists of a set of states, actions, transition probabilities, and rewards. States represent different configurations of the game,
+                        actions are the possible moves Pac-Man can make, transition probabilities describe the likelihood of moving from one state to another after taking an action,
+                        and rewards quantify the desirability of reaching a particular state.
+                        By employing MDPs, Pac-Man's AI can make optimal decisions by considering the current state,
+                        available actions, and potential rewards associated with those actions.
+                        This allows for intelligent and strategic gameplay, where Pac-Man learns to navigate the maze, avoid ghosts,
+                        and collect pellets efficiently based on the principles of reinforcement learning.</p>
+
+                    <p>The iterative development process involved testing and refining the AI agent's performance using different scenarios and maze configurations.
+                    The goal was to create an AI agent that not only efficiently collected food but also demonstrated strategic prowess in dealing with dynamic and
+                    unpredictable ghost movements.</p>
+
+                    <div class = "modal-subtitle">Source Code</div>
+                    <p>Contact me through email to get access to the following code.
+                        Access has been restricted since the project is an ongoing homework project for
+                        CSE 473 AI at UW Seattle.</p>
                 </div>
             </div>
 
             <div class="modal" id="modal3" >
                 <div class="modal-content">
                     <span class="close-modal" onclick="closeModal('modal3')">&times;</span>
-                    <h2>Project 3</h2>
-                    <p>Detailed information about Project 3.</p>
+                    <h2 class = "modal-title">Multithreaded Web Server</h2>
+                    <p>The project involves the development of an In-Memory File System Search Engine in C, leveraging a doubly linked list to implement a chained hash table.
+                        The combination of these data structures ensures efficient collision resolution and dynamic storage of key-value pairs. The In-Memory File System Search Engine
+                        enables rapid retrieval of files and content within the file system.
+                        Additionally, a multithreaded web server is developed to showcase the functionality of the search engine,
+                        concurrent and responsive access to search results.</p>
+                    <div class = "modal-subtitle">Process</div>
+                    <p>The project initiation involved the development of a doubly linked list in C, serving as a dynamic and versatile data structure.
+                    This list became the basis for the subsequent implementation of a chained hash table, specifically designed for efficient collision
+                    resolution and the dynamic storage of key-value pairs. The selection of these foundational components was strategic, aiming to establish a
+                    robust infrastructure capable of addressing the complexities inherent in an In-Memory File System Search Engine.</p>
+
+                    <p>Expanding on the established data structures, the development process transitioned to the creation of the In-Memory File System Search Engine.
+                    Leveraging the capabilities of the implemented chained hash table, this component facilitated rapid file and content retrieval within the file system.
+                    The design emphasized efficiency and practicality in managing and accessing files within the system.</p>
+
+                    <p>As a demonstration of the In-Memory File System Search Engine's capabilities, the project extended to the development of a
+                    multithreaded web server in C. This server, designed for concurrent access, provided users with responsive and simultaneous access
+                    to search results. The multithreaded architecture showcased the engine's applicability in handling real-world scenarios with diverse
+                    and concurrent user interactions.</p>
+
+                    <p>The final stages of the development process focused on the seamless integration of components into a cohesive system.
+                    Rigorous testing validated the functionalities, performance, and responsiveness of both the In-Memory File System Search
+                    Engine and the multithreaded web server. Optimization efforts addressed potential performance bottlenecks, refining the
+                    implementation for enhanced efficiency. Additionally, security measures were implemented to fortify the integrity of the entire system,
+                    ensuring a robust and secure solution for file system management and retrieval. The resulting project stands as an exemplar of
+                    strategic data structure utilization and technical implementation to deliver an efficient solution for file system operations.</p>
+
+                    <div class = "modal-subtitle">Source Code</div>
+                    <p>Contact me through email to get access to the following code.
+                        Access has been restricted since the project is an ongoing homework project for
+                        CSE 333 Systems Programming at UW Seattle.</p>
                 </div>
             </div>
 
@@ -207,7 +273,7 @@
                     <span class="close-modal" onclick="closeModal('modal4')">&times;</span>
                     <h2 class = "modal-title">UW Campus Maps</h2>
                     <div class = "modal-subtitle">Overview</div>
-                    <p>The creation of the UW campus map involved a meticulous process of designing modular components, each rigorously tested to ensure reliability and efficiency.
+                    <p>The creation of the UW campus map involved a process of designing modular components, each rigorously tested to ensure reliability and efficiency.
                         These components encompassed a versatile graph class, a dedicated campus map class, a backend Java Spark server, and frontend elements built in React.</p>
                     <div class = "modal-subtitle">Process</div>
                     <p>During the development phase, Dijkstra's algorithm takes center stage as the key mechanism for calculating the shortest paths between
@@ -264,7 +330,7 @@
                     <span class="close-modal" onclick="closeModal('modal6')">&times;</span>
                     <h2 class = "modal-title">Flight Query</h2>
                     <div class = "modal-subtitle">Overview</div>
-                    <p>Imported and managed a Flight Database on Azure, enabling user registration and flight bookings through a Java terminal.
+                    <p> Imported and managed a Flight Database on Azure, enabling user registration and flight bookings through a Java terminal.
                         Implemented a 2-phase locking mechanism for concurrent bookings, ensuring data integrity with prioritized security using hashed and salted passwords.
                         Demonstrates proficiency in database management, Java programming, and user-centric design.
                         The process involved rigorous attention to detail and security considerations.</p>
@@ -278,7 +344,7 @@
                         upon the successful completion of all database changes. In cases of unsuccessful commits, the system seamlessly rolled back to the transaction's initial state,
                         facilitating a retry mechanism.</p>
 
-                    <p> =The database structure was designed with precision, featuring key tables and well-defined relationships.
+                    <p> The database structure was designed with precision, featuring key tables and well-defined relationships.
                         User authentication prioritized security, employing robust hashing and salting techniques for password protection.
                         Concurrency control measures were implemented to manage simultaneous user interactions, preventing conflicts and ensuring data integrity.
                         Integration with Azure services optimized data transfer and leveraged the platform's capabilities.</p>
@@ -293,16 +359,58 @@
             <div class="modal" id="modal8">
                 <div class="modal-content">
                     <span class="close-modal" onclick="closeModal('modal8')">&times;</span>
-                    <h2>Project 7</h2>
-                    <p>Detailed information about Project 7.</p>
+                    <h2 class = "modal-title">Stealth Internship</h2>
+                    <div class = "modal-subtitle">Overview</div>
+                    <p>The internship involves a software developer role in managing a full-stack application within a small team comprised of a diverse mix of
+                        veteran professionals and college students. The focus is on leveraging cutting-edge front-end frameworks such as
+                        Node.js and MongoDB to spearhead an AI project.</p>
+                    <div class = "modal-subtitle">Process</div>
+                    <p>Oversee the end-to-end management of a full-stack application, ensuring seamless integration of front-end and back-end components.
+                        Collaborate with team members to define project scope, objectives, and timelines in a scrum environment.</p>
+
+                    <p>A core technical aspect of my internship involves a deep dive into Node.js, a powerful runtime that enables server-side JavaScript execution.
+                        Understanding and harnessing the asynchronous nature of JavaScript within the Node.js environment is crucial for responsive front-end applications.
+                        This involves mastering event-driven programming,
+                        effectively utilizing callbacks, promises, and async/await patterns to ensure optimal performance in handling user interactions.</p>
+
+                    <p>Overall, the internship provides a unique opportunity to manage a full-stack application, navigate
+                        the dynamics of a small and diverse team,
+                        and contribute to the innovative intersection of AI and modern web development technologies.
+                        It combines the best of both worlds—seasoned expertise and fresh perspectives—to create a collaborative
+                        and forward-thinking environment.
+
+                    </p>
+                    <div class = "modal-subtitle">More Info</div>
+                    <p>The startup is still in early stages of development, and thus is in stealth. For more info / proof of
+                    contribution please contact me.</p>
                 </div>
             </div>
 
             <div class="modal" id="modal7">
                 <div class="modal-content">
                     <span class="close-modal" onclick="closeModal('modal7')">&times;</span>
-                    <h2>Project 7</h2>
-                    <p>Detailed information about Project 7.</p>
+                    <h2>UI Path Internship</h2>
+                    <p>During a dynamic internship at UI Path, I immersed myself in the realm of Robotic Process Automation (RPA),
+                        gaining invaluable insights into its transformative impact on modern workplaces.
+                        Engaging with cutting-edge technologies and collaborating within a dynamic scrum/agile workflow,
+                        I delved into the practical applications of UI Path's RPA to streamline processes and solve arithmetic equations.</p>
+
+                    <div class = "modal-subtitle">Exploration of RPA Technology</div>
+
+                    <p>A central focus of the internship was the in-depth exploration of Robotic Process Automation (RPA) technology, particularly within the UI Path ecosystem.
+                    Delved into the core principles and functionalities of RPA, understanding its potential to revolutionize routine and rule-based tasks in various industries.</p>
+
+                    <p>Applied UI Path's RPA technology to solve arithmetic equations, showcasing the practical applications of automation in streamlining mathematical processes.
+                    Engaged in hands-on projects that highlighted the efficiency and effectiveness of RPA solutions in enhancing workflow automation.</p>
+
+                    <div class = "modal-subtitle">Scrum/Agile Workflow</div>
+
+                    <p>Worked within a dynamic scrum/agile workflow, gaining hands-on experience in an environment that prioritizes adaptability and collaboration.
+                        Contributed to sprint cycles, actively participating in iterative development processes and ensuring alignment with project goals.</p>
+                    <div class = "modal-subtitle">Insights</div>
+
+                    <p> Gained firsthand insights into how RPA transforms modern workplaces by automating repetitive tasks, reducing errors, and freeing up valuable human resources for more strategic and creative endeavors.
+                    Explored use cases where RPA plays a pivotal role in increasing operational efficiency and productivity.</p>
                 </div>
             </div>
         </div>

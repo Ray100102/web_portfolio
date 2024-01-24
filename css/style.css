@@ -163,7 +163,7 @@ h2
 {
     font-weight: normal;
     color: #e0dbd1;
-    text-align: left;
+    text-align: center;
     margin-top: 10px;
     margin-bottom: 10px;
     margin-left: 400px;
@@ -186,6 +186,12 @@ h2
 
 .no-indent p {
     text-indent : 0px !important;
+}
+
+@media (max-width: 2500px) {
+    .About h3 {
+        text-align: left;
+    }
 }
 
 @media (max-width: 1300px) {
@@ -212,6 +218,7 @@ h2
         font-size: 15px;
     }
 }
+
 
 /* Container properties*/
 .project-box {
@@ -275,15 +282,15 @@ h2
 }
 
 .modal-content {
+    max-height: 60%;
+    overflow-y: auto;
     background-color: #111;
     border-radius: 8px;
-    overflow: hidden;
     max-width: 900px;
     padding: 20px;
     position: relative;
     font-size : 20px;
     font-family: Georgia
-
 
 }
 

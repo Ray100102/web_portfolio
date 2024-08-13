@@ -83,7 +83,9 @@ header.sticky ul li a
   opacity: .9;
 }
 
-
+.yellow {
+    color: yellow;
+}
 .intro-container::before {
   content: "";
   position: absolute;
